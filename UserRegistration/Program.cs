@@ -7,7 +7,7 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Phone Number");
+            Console.WriteLine("Enter Password");
             string inStr = Console.ReadLine();
             string firsName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
             string lastName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
