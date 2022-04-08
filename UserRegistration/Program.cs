@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace UserRegistration
 {
@@ -6,7 +7,12 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to User Registration problem master branch");
+            string inStr = Console.ReadLine();
+
+            string firstName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
+
+            Regex regex = new Regex(firstName);
+            Console.WriteLine(regex.IsMatch(inStr));
         }
     }
 }
